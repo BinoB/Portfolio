@@ -1,0 +1,75 @@
+.section{
+    min-height: 100vh;
+    background-color: rgb(188, 224, 223);
+    align-content: center;
+    padding: 5%;
+}
+
+.project{
+    min-height: 100vh;
+    background-color: rgb(213, 219, 240);
+    
+    padding: 10%;
+    padding-top: 2%;
+}
+
+.chart{
+    align-content: center;
+    padding-left: 15%;
+}
+.element.style{
+    padding-left: 15%;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-container {
+    margin: 20px;
+}
+
+.image {
+    max-width: 600px;
+    height: auto;
+}
+
+.card-img-top{
+    max-height: 200px;
+    max-width: 350px;
+}
+
+.logo{
+    min-width: 20px;
+    min-height: 30px;
+}
+
+
+.skill-logo{
+    max-width: 60px;
+}
+
+.card-logo{
+    max-width: 70px;
+}
+
+
+
+.popover {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .popover.no-border {
+    border: none;
+    box-shadow: none;
+  }
+  .main-logo{
+    max-width: 45px;
+  }
