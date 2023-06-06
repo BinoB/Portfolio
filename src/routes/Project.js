@@ -1,53 +1,57 @@
 import React from "react";
-/* import { Link } from "react-router-dom"; */
-import home from "../assets/homepage.png";
-import dashboard from "../assets/dashboard.png";
-import chart from "../assets/chart.png";
-import profile from "../assets/profile.png";
+import cash from "../assets/pettyCash.jpg";
+import ticket from "../assets/ticket.jpg";
 
 const Project = () => {
+  const projects = [
+    {
+      title: "Pettycash Manager",
+      description:
+        "A petty cash manager is responsible for overseeing and maintaining accurate records of a small fund used for everyday expenses.                                                                  ",
+      image: cash,
+      link: "https://pettycash-manager.vercel.app/",
+    },
+    {
+      title: "Movie Ticket Booking",
+      description:
+        "A Movie Ticket Booking web application allows users to purchase movie tickets online for convenient and hassle-free cinema experiences.",
+      image: ticket,
+      link: "https://guvi-hackathon2-frontend-ibd2.vercel.app/",
+    },
+  ];
+
   return (
-    <div className="project">
-      <div className=" text-center">
-        <h1>My Project</h1>
-        <h2>Pettycash Manager</h2>
-        <span>
-          <p className="h3">
-            A petty cash manager is responsible for overseeing and maintaining
-            accurate records of a small fund used for everyday expenses,
-            ensuring proper authorization and documentation of all transactions.
-          </p>
-          <div className="button d-flex justify-content-center">
-            <a
-              href="https://pettycash-manager.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-light me-4 rounded-pill px-4 py-2">
-                Visit My Project
-              </button>
-            </a>
-          </div>
-        </span>
-      </div>
-      <div className="container">
-        <div className="image-container">
-          <img src={home} alt="home" className="image" />
-        </div>
-        <div className="image-container">
-          <img src={dashboard} alt="dashboard" className="image" />
-        </div>
-      </div>
-      <div className="container">
-        <div className="image-container">
-          <img src={chart} alt="chart" className="image" />
-        </div>
-        <div className="image-container">
-          <img src={profile} alt="profile" className="image" />
+    <div>
+      <h1 className="text-center mt-5 mb-3">My Projects</h1>
+
+      <div className="container my-5">
+        <div className="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-center">
+          {projects.map((project, index) => (
+            <div className="col" key={index}>
+              <div className="card h-100">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="card-img-top portfolio-image"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text">{project.description}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-light me-4 rounded-pill px-4 py-2"
+                  >
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-
   );
 };
 
