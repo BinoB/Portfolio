@@ -56,7 +56,7 @@ const Skills = () => {
         </div>
       </div>
       <div class="row">
-        <h3 className="text-center">Backtend Development</h3>
+        <h3 className="text-center">Backend Development</h3>
 
         <div class="col-12 d-flex justify-content-center my-3">
           <img src={nodejs} alt="nodejs" class="skill-logo me-3" data-mdb-toggle="popover"
