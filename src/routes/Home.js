@@ -1,7 +1,6 @@
 import React from "react";
 import "./main.css";
 import frontimg from "../assets/front.png";
-import resume from "../assets/resume.pdf";
 import Project from "./Project";
 import Skills from "./Skills";
 import Education from "./Education";
@@ -25,7 +24,7 @@ const Home = () => {
               development with Node.js and Express.
             </p>
             <div className="button d-flex justify-content-end">
-              <a href={resume} download>
+              <a href="https://drive.google.com/file/d/1bSV_v-vzRnukv3-Y4_Usa5Ae4bm8vE0S/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>
                 <button className="btn btn-light me-4 rounded-pill px-4 py-2 download-link">
                   Download Resume
                 </button>
