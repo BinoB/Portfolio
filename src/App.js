@@ -9,6 +9,7 @@ import Project from "./routes/Project";
 import Education from "./routes/Education";
 import Contact from "./routes/Contact";
 import Skills from "./routes/Skills";
+import Certificate from "./routes/Certificate";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route exact path="*" element={<Home/>}/>
         <Route path="/project" element={<Project/>}/>
+        <Route path="/certificate" element={<Certificate/>}/>
         <Route path="/skills" element={<Skills/>}/>
         <Route path="/education" element={<Education/>}/>
         <Route path="/contact" element={<Contact/>}/>

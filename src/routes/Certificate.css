@@ -1,0 +1,25 @@
+/* Certificate.css */
+
+.card {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.certificate-logo {
+  width: 100px; /* Adjust the logo width as needed */
+  height: 100px; /* Adjust the logo height as needed */
+  object-fit: contain;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin-left: auto; /* Align the links to the right side */
+}

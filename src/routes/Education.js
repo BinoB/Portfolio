@@ -12,7 +12,7 @@ const Education = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="card">
+              <div className="card education-card">
                 <img src={srm} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">
@@ -44,7 +44,7 @@ const Education = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card">
+              <div className="card education-card">
                 <img src={msptc} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">
@@ -75,7 +75,7 @@ const Education = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card">
+              <div className="card education-card">
                 <img src={guvi} className="card-img-top" alt="..." />
                 <br />
                 <div className="card-body">

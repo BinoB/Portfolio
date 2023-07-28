@@ -1,3 +1,4 @@
+
 .section{
     min-height: 100vh;
     background-color: rgb(188, 224, 223);
@@ -51,9 +52,6 @@
 }
 
 
-.skill-logo{
-    max-width: 60px;
-}
 
 .card-logo{
     max-width: 70px;
@@ -100,3 +98,69 @@
     border-color: transparent;
     color: #000000 !important;
   }
+
+
+  /* Project.css */
+
+.project-card  {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(119, 185, 180, 0.541); /* Add shadow effect */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease; /* Add smooth animation to the transform */
+}
+
+.project-card:hover {
+  transform: translateY(-5px) rotateX(10deg); /* Apply the 3D animation on hover */
+}
+
+.education-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(197, 183, 105, 0.719); /* Add shadow effect */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease; /* Add smooth animation to the transform */
+}
+
+.education-card:hover {
+  transform: translateY(-5px) rotateX(10deg); /* Apply the 3D animation on hover */
+}
+
+
+
+.contact-card{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease; /* Add smooth animation to the transform */
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) rotateX(10deg); /* Apply the 3D animation on hover */
+}
+
+/* Certificate.css */
+
+.certificate-logo {
+  width: 100px; /* Set the desired width for the logo */
+  height: 100px; /* Set the desired height for the logo */
+  object-fit: contain; /* Adjusts the logo's size while preserving its aspect ratio */
+}
+
+/* Home.css */
+
+.download-link {
+  text-decoration: none; /* Remove text decoration */
+}
+
+.certificate-card{
+  border: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(123, 171, 224); /* Add shadow effect */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease; /* Add smooth animation to the transform */
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px) rotateX(10deg); /* Apply the 3D animation on hover */
+}

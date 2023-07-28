@@ -1,50 +1,48 @@
 import React from "react";
 import location from "../assets/location.png";
-import "./main.css";
 import mail from "../assets/mail.png";
 import phone from "../assets/telephone.png";
+import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="container-lg my-5">
+    <div className="contact-container my-5">
       <h2 className="text-center mb-5">Contact</h2>
       <div className="row justify-content-center">
-        <div className="col-md-2">
-          <div className="card">
-            <div className="card-header text-center">
-              <img src={mail} alt="Logo 1" className="card-logo" />
-              <h4 className="card-title">Email</h4>
+        <div className="col-md-2 col-sm-6">
+          <div className="contact-card">
+            <div className="contact-card-header text-center">
+              <img src={mail} alt="Email Icon" className="contact-card-logo" />
+              <h4 className="contact-card-title">Email</h4>
             </div>
-            <div className="card-body">
-              <p className="card-text text-center">binob831@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-2">
-          <div className="card">
-            <div className="card-header text-center">
-              <img src={location} alt="Logo 2" className="card-logo" />
-              <h4 className="card-title">Location</h4>
-            </div>
-            <div className="card-body">
-              <p className="card-text text-center">Chennai</p>
+            <div className="contact-card-body">
+              <p className="contact-card-text text-center">binob831@gmail.com</p>
             </div>
           </div>
         </div>
-        <div className="col-md-2">
-          <div className="card">
-            <div className="card-header text-center">
-              <img src={phone} alt="Logo 3" className="card-logo" />
-              <h4 className="card-title">Phone</h4>
+        <div className="col-md-2 col-sm-6">
+          <div className="contact-card">
+            <div className="contact-card-header text-center">
+              <img src={location} alt="Location Icon" className="contact-card-logo" />
+              <h4 className="contact-card-title">Location</h4>
             </div>
-            <div className="card-body">
-              <p className="card-text text-center">+91 9751925690</p>
+            <div className="contact-card-body">
+              <p className="contact-card-text text-center">Chennai</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-2 col-sm-6">
+          <div className="contact-card">
+            <div className="contact-card-header text-center">
+              <img src={phone} alt="Phone Icon" className="contact-card-logo" />
+              <h4 className="contact-card-title">Phone</h4>
+            </div>
+            <div className="contact-card-body">
+              <p className="contact-card-text text-center">+91 9751925690</p>
             </div>
           </div>
         </div>
       </div>
-      <br/>
-      <br/>
     </div>
   );
 };

@@ -1,0 +1,64 @@
+/* Add styles for the skill section */
+.skill {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    padding: 5%;
+  }
+  
+  /* Center align the "My Skills" heading */
+  .skill h1 {
+    text-align: center;
+  }
+  
+  /* Add styles for the frontend development logos */
+  .skill .text-center {
+    text-align: center;
+  }
+  
+  .skill-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .skill-logo img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  .logo-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px; /* Add margin between the logo and the logo name */
+  }
+  
+  /* Style the images on hover */
+  .skill-logo img:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+/* 
+*body {
+  background-color: #3b82f6;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #455a7a, #ad587a);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  z-index: -1;
+} */
+
+
+ 
+
