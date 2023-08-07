@@ -7,8 +7,8 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container my-5">
-      <h2 className="text-center mb-5">Contact</h2>
-      <div className="row justify-content-center">
+      <h2 className="text-center">Contact</h2>
+      <div className="row justify-content-center my-3">
         <div className="col-md-2 col-sm-6">
           <div className="contact-card">
             <div className="contact-card-header text-center">

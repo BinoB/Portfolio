@@ -24,41 +24,41 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <div className="skill">
-      <h1 className="text-center">My Skills</h1>
+      <h1 className="text-center my-0">My Skills</h1>
       <div className="row">
-        <h3 className="text-center my-4">Frontend Development</h3>
+        <h3 className="text-center my-2">Frontend Development</h3>
 
-        <div className="col-12 d-flex justify-content-center my-3">
-          <div className="skill-logo">
+        <div className="col-12 d-flex justify-content-center my-1">
+          <div className="skills-logo">
             <img src={html} alt="HTML" />
             <p className="logo-name">HTML</p>
           </div>
-          <div className="skill-logo">
+          <div className="skills-logo">
             <img src={css} alt="CSS" />
             <p className="logo-name">CSS</p>
           </div>
-          <div className="skill-logo">
+          <div className="skills-logo">
             <img src={javascript} alt="JavaScript" />
             <p className="logo-name">JavaScript</p>
           </div>
-          <div className="skill-logo">
+          <div className="skills-logo">
             <img src={sass} alt="sass" />
             <p className="logo-name">SCSS</p>
           </div>
-          <div className="skill-logo">
+          <div className="skills-logo">
             <img src={bootstrap} alt="Bootstrap" />
             <p className="logo-name">Bootstrap</p>
           </div>
-          <div className="skill-logo">
+          <div className="skills-logo">
             <img src={react} alt="Reactjs" />
             <p className="logo-name">React</p>
           </div>
         </div>
       </div>
-      <div className="row p-5">
+      <div className="row">
         <h3 className="text-center">Backend Development</h3>
 
-        <div className="col-12 d-flex justify-content-center my-3">
+        <div className="col-12 d-flex justify-content-center my-1">
           <div className="skill-logo">
             <img src={nodejs} alt="nodejs" />
             <p className="logo-name">Node.js</p>
@@ -76,7 +76,7 @@ const Skills = () => {
       <div className="row">
         <h3 className="text-center">Tools & Methods</h3>
 
-        <div className="col-12 d-flex justify-content-center my-3">
+        <div className="col-12 d-flex justify-content-center my-1">
           <div className="skill-logo">
             <img src={git} alt="linux" />
             <p className="logo-name">Git</p>
@@ -99,10 +99,10 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="row p-5">
+      <div className="row">
         <h3 className="text-center">Other Skills</h3>
 
-        <div className="col-12 d-flex justify-content-center my-3">
+        <div className="col-12 d-flex justify-content-center my-1">
           <div className="skill-logo">
             <img src={linux} alt="linux" />
             <p className="logo-name">Linux</p>

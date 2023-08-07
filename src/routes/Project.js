@@ -13,7 +13,8 @@ const Project = () => {
         "A petty cash manager is responsible for overseeing and maintaining accurate records of a small fund used for everyday expenses.",
       image: cash,
       link: "https://pettycash-manager.vercel.app/",
-      githubLink: "https://github.com/BinoB/Pettycash-manager",
+      githubLinkFrontend: "https://github.com/BinoB/Pettycash-manager--frontend",
+      githubLinkBackend: "https://github.com/BinoB/Pettycash-manager-server",
     },
     {
       title: "Movie Ticket Booking",
@@ -21,7 +22,8 @@ const Project = () => {
         "A Movie Ticket Booking web application allows users to purchase movie tickets online for convenient and hassle-free cinema experiences.",
       image: ticket,
       link: "https://guvi-hackathon2-frontend-ibd2.vercel.app/",
-      githubLink: "https://github.com/BinoB/Universal_Movies",
+      githubLinkFrontend: "https://github.com/BinoB/guvi-hackathon2-frontend",
+      githubLinkBackend: "https://github.com/BinoB/guvi-hackathon2-backend",
     },
     {
       title: "Blog App",
@@ -29,7 +31,8 @@ const Project = () => {
         "A blog app that allows users to create, publish, and share articles or posts on various topics",
       image: blog,
       link: "https://heroic-axolotl-3f0ac5.netlify.app",
-      githubLink: "https://github.com/BinoB/Blog",
+      githubLinkFrontend: "https://github.com/BinoB/Blog_App-Frontend",
+      githubLinkBackend: "https://github.com/BinoB/Blog_App_Backend",
     },
     {
       title: "Shop",
@@ -37,7 +40,8 @@ const Project = () => {
         "Retail store management system with features like tracking sales transactions, and payment processing for seamless operations in stores",
       image: shop,
       link: "https://fantastic-halva-5e3300.netlify.app",
-      githubLink: "https://github.com/BinoB/Shop",
+      githubLinkFrontend: "https://github.com/BinoB/Shop_Frontend",
+      githubLinkBackend: "https://github.com/BinoB/Shop_Backend",
     },
   ];
 
@@ -45,7 +49,7 @@ const Project = () => {
     <div className="project-page">
       <h1 className="text-center my-0 ">My Projects</h1>
 
-      <div className="container my-5">
+      <div className="container my-3">
         <div className="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-center">
           {projects.map((project, index) => (
             <div className="col" key={index}>
@@ -67,12 +71,20 @@ const Project = () => {
                     View Project
                   </a>
                   <a
-                    href={project.githubLink}
+                    href={project.githubLinkFrontend}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-light  rounded-pill px-4 py-2"
                   >
-                    GitHub
+                    Frontend Code
+                  </a>
+                  <a
+                    href={project.githubLinkBackend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-light  rounded-pill px-4 py-2"
+                  >
+                    Backend Code
                   </a>
                 </div>
               </div>

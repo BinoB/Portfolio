@@ -1,9 +1,9 @@
 /* Add styles for the skill section */
 .skill {
-    min-height: 100vh;
     background-color: rgb(255, 255, 255);
     align-content: center;
-    padding: 5%;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   
   /* Center align the "My Skills" heading */
@@ -20,6 +20,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 7px;
+  }
+  .skills-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
   }
   
@@ -28,6 +34,10 @@
     height: auto;
   }
   
+  .skills-logo img {
+    max-width: 80px;
+    height: auto;
+  }
   .logo-name {
     font-size: 14px;
     color: #333;
@@ -36,6 +46,9 @@
   
   /* Style the images on hover */
   .skill-logo img:hover {
+    transform: scale(1.1);
+  }
+  .skills-logo img:hover {
     transform: scale(1.1);
   }
   

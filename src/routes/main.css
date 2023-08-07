@@ -1,18 +1,15 @@
 
 .section{
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: rgb(188, 224, 223);
     align-content: center;
-    padding: 5%;
 }
 
-.project{
-    min-height: 100vh;
-    background-color: rgb(213, 219, 240);
-    
-    padding: 10%;
-    padding-top: 2%;
-}
+.project-page{
+    background-color: rgb(255, 255, 255);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    }
 
 .chart{
     align-content: center;
@@ -114,17 +111,6 @@
   transform: translateY(-5px) rotateX(10deg); /* Apply the 3D animation on hover */
 }
 
-.education-card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(197, 183, 105, 0.719); /* Add shadow effect */
-  transform-style: preserve-3d; /* Enable 3D transformations */
-  transition: transform 0.3s ease; /* Add smooth animation to the transform */
-}
-
-.education-card:hover {
-  transform: translateY(-5px) rotateX(10deg); /* Apply the 3D animation on hover */
-}
 
 
 
@@ -163,4 +149,11 @@
 
 .certificate-card:hover {
   transform: translateY(-10px) rotateX(10deg); /* Apply the 3D animation on hover */
+}
+
+/* main.css */
+.custom-card-body {
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }

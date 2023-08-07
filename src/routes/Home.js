@@ -17,8 +17,8 @@ const Home = () => {
         >
           <div>
             <h1>About</h1>
-            <p className="h2 text">
-              "Hello", my name is Binoni, I am a full-stack web developer with a
+            <p className="h5 text">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Hello", My name is Binoni, I am a full-stack web developer with a
               focus on creating dynamic and innovative web applications. I have
               experience in front-end development with React and back-end
               development with Node.js and Express.

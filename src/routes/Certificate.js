@@ -43,8 +43,8 @@ const Certificate = () => {
   ];
 
   return (
-    <div className="container mt-2 my-5 certificate-page">
-      <h2 className='my-5'>Certificates</h2>
+    <div className="container my-3 certificate-page">
+      <h2 className='my-3'>Certificates</h2>
       <div className='row'>
         {certificates.map((certificate, index) => (
           <div key={index} className="col-md-4 mb-4">
@@ -57,7 +57,7 @@ const Certificate = () => {
                   href={certificate.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-light me-4 rounded-pill px-4 py-2 my-3"
+                  className="btn btn-light rounded-pill px-4 py-2 my-3"
                 >
                   View Certificate
                 </a>

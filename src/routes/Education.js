@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "./Education.css";
 import srm from "../assets/srm.png";
 import msptc from "../assets/msptc.png";
 import guvi from "../assets/guvi.png";
@@ -7,11 +7,11 @@ import guvi from "../assets/guvi.png";
 const Education = () => {
   return (
     <div>
-      <h2 className="text-center mb-5 my-5">Education</h2>
-      <section id="education" className="my-5">
+      <h2 className="text-center my-3">Education</h2>
+      <section id="education" className="my-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+          <div className="col-md-4">
               <div className="card education-card">
                 <img src={srm} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -46,7 +46,7 @@ const Education = () => {
             <div className="col-md-4">
               <div className="card education-card">
                 <img src={msptc} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body text-star">
                   <h5 className="card-title">
                     Diploma in Mechanical Engineering
                   </h5>
@@ -78,8 +78,9 @@ const Education = () => {
               <div className="card education-card">
                 <img src={guvi} className="card-img-top" alt="..." />
                 <br />
-                <div className="card-body">
+                <div className="card-body text-star">
                   <h5 className="card-title">
+                    <br />
                     Certification in Full Stack Web Developement - BootCamp
                   </h5>
                   <p className="card-text">GUVI GEEK NETWORK PRIVATE LIMITED</p>
