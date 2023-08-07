@@ -7,7 +7,7 @@ import guvi from "../assets/guvi.png";
 const Education = () => {
   return (
     <div>
-      <h2 className="text-center my-3">Education</h2>
+      <h2 className="text-center my-4">Education</h2>
       <section id="education" className="my-3">
         <div className="container">
           <div className="row">
