@@ -80,7 +80,7 @@ const Education = () => {
                 <br />
                 <div className="card-body text-star">
                   <h5 className="card-title">
-                    <br />
+                    
                     Certification in Full Stack Web Developement - BootCamp
                   </h5>
                   <p className="card-text">GUVI GEEK NETWORK PRIVATE LIMITED</p>
