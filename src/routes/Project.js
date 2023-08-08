@@ -142,7 +142,7 @@ const Project = () => {
       {showCredentials && (
         <div className="credentials-popup">
           <div className="credentials-popup-content">
-            <h4>Credentials</h4>
+            <h4>Login</h4><br />
             <div className="credentials">
               <p>Email: {credentials.email}</p>
               <div className="copy-logo" onClick={copyEmail}>
