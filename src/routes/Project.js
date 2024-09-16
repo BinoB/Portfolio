@@ -102,7 +102,7 @@ const Project = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-dark me-4 rounded-pill px-4 py-2"
+                    className="btn btn-dark me-1 rounded-pill px-4 py-2"
                   >
                     View Project
                   </a>
@@ -110,7 +110,7 @@ const Project = () => {
                     href={project.githubLinkFrontend}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-light  rounded-pill px-4 py-2"
+                    className="btn btn-light me-1 rounded-pill px-4 py-2"
                   >
                     Frontend Code
                   </a>
@@ -118,7 +118,7 @@ const Project = () => {
                     href={project.githubLinkBackend}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-light me-4  rounded-pill px-4 py-2"
+                    className="btn btn-light me-1 rounded-pill px-4 py-2"
                   >
                     Backend Code
                   </a>
@@ -129,7 +129,7 @@ const Project = () => {
                         project.credentials.password
                       )
                     }
-                    className="btn btn-light rounded-pill px-4 py-2 mb-2"
+                    className="btn btn-light rounded-pill px-4 py-2 mb-2 me-1"
                   >
                     Credentials
                   </button>
