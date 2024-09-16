@@ -18,114 +18,70 @@ import github from "../assets/github.png";
 import vercel from "../assets/vercel.png";
 import netlify from "../assets/netlify.png";
 import chrome from "../assets/chrome.png";
-import "./main.css";
+import aws from "../assets/aws.png";
+
 import "./Skills.css";
 
 const Skills = () => {
+  const skillsData = [
+    {
+      category: "Frontend Development",
+      skills: [
+        { src: html, alt: "HTML", name: "HTML" },
+        { src: css, alt: "CSS", name: "CSS" },
+        { src: javascript, alt: "JavaScript", name: "JavaScript" },
+        { src: sass, alt: "SCSS", name: "SCSS" },
+        { src: bootstrap, alt: "Bootstrap", name: "Bootstrap" },
+        { src: react, alt: "React", name: "React" },
+      ],
+    },
+    {
+      category: "Backend Development",
+      skills: [
+        { src: nodejs, alt: "Node.js", name: "Node.js" },
+        { src: express, alt: "Express.js", name: "Express.js" },
+        { src: mongodb, alt: "MongoDB", name: "MongoDB" },
+        {src:aws, alt:"aws", name: "AWS"}
+      ],
+    },
+    {
+      category: "Tools & Methods",
+      skills: [
+        { src: git, alt: "Git", name: "Git" },
+        { src: github, alt: "GitHub", name: "GitHub" },
+        { src: vercel, alt: "Vercel", name: "Vercel" },
+        { src: netlify, alt: "Netlify", name: "Netlify" },
+        { src: chrome, alt: "Chrome Dev", name: "Chrome Dev" },
+      ],
+    },
+    {
+      category: "Other Skills",
+      skills: [
+        { src: linux, alt: "Linux", name: "Linux" },
+        { src: inkscape, alt: "Inkscape", name: "Inkscape" },
+        { src: gimp, alt: "GIMP", name: "GIMP" },
+        { src: figma, alt: "Figma", name: "Figma" },
+        { src: msoffice, alt: "Microsoft Office", name: "Microsoft Office" },
+      ],
+    },
+  ];
+
   return (
-    <div className="skill">
-      <h1 className="text-center my-0">My Skills</h1>
-      <div className="row">
-        <h3 className="text-center my-2">Frontend Development</h3>
-
-        <div className="col-12 d-flex justify-content-center my-1">
-          <div className="skills-logo">
-            <img src={html} alt="HTML" />
-            <p className="logo-name">HTML</p>
-          </div>
-          <div className="skills-logo">
-            <img src={css} alt="CSS" />
-            <p className="logo-name">CSS</p>
-          </div>
-          <div className="skills-logo">
-            <img src={javascript} alt="JavaScript" />
-            <p className="logo-name">JavaScript</p>
-          </div>
-          <div className="skills-logo">
-            <img src={sass} alt="sass" />
-            <p className="logo-name">SCSS</p>
-          </div>
-          <div className="skills-logo">
-            <img src={bootstrap} alt="Bootstrap" />
-            <p className="logo-name">Bootstrap</p>
-          </div>
-          <div className="skills-logo">
-            <img src={react} alt="Reactjs" />
-            <p className="logo-name">React</p>
+    <div className="skills-container">
+      <h1 className="text-center">My Skills</h1>
+      {skillsData.map((section, index) => (
+        <div key={index} className="skills-section">
+          <h3 className="section-title">{section.category}</h3>
+          <div className="skills-grid">
+            {section.skills.map((skill, idx) => (
+              <div key={idx} className="skills-item">
+                <img src={skill.src} alt={skill.alt} className="skills-img" />
+                <p className="skills-name">{skill.name}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-      <div className="row">
-        <h3 className="text-center">Backend Development</h3>
-
-        <div className="col-12 d-flex justify-content-center my-1">
-          <div className="skill-logo">
-            <img src={nodejs} alt="nodejs" />
-            <p className="logo-name">Node.js</p>
-          </div>
-          <div className="skill-logo">
-            <img src={express} alt="express" />
-            <p className="logo-name">Express.js</p>
-          </div>
-          <div className="skill-logo">
-            <img src={mongodb} alt="mongodb" />
-            <p className="logo-name">MongoDB</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <h3 className="text-center">Tools & Methods</h3>
-
-        <div className="col-12 d-flex justify-content-center my-1">
-          <div className="skill-logo">
-            <img src={git} alt="linux" />
-            <p className="logo-name">Git</p>
-          </div>
-          <div className="skill-logo">
-            <img src={github} alt="inkscape" />
-            <p className="logo-name">Github</p>
-          </div>
-          <div className="skill-logo ">
-            <img src={vercel} alt="gimp" />
-            <p className="logo-name my-3">Versal</p>
-          </div>
-          <div className="skill-logo">
-            <img src={netlify} alt="figma" />
-            <p className="logo-name">Netlify</p>
-          </div>
-          <div className="skill-logo">
-            <img src={chrome} alt="msoffice" />
-            <p className="logo-name">Chrome Dev</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <h3 className="text-center">Other Skills</h3>
-
-        <div className="col-12 d-flex justify-content-center my-1">
-          <div className="skill-logo">
-            <img src={linux} alt="linux" />
-            <p className="logo-name">Linux</p>
-          </div>
-          <div className="skill-logo">
-            <img src={inkscape} alt="inkscape" />
-            <p className="logo-name">Inkscape</p>
-          </div>
-          <div className="skill-logo">
-            <img src={gimp} alt="gimp" />
-            <p className="logo-name">GIMP</p>
-          </div>
-          <div className="skill-logo">
-            <img src={figma} alt="figma" />
-
-            <p className="logo-name">Figma</p>
-          </div>
-          <div className="skill-logo">
-            <img src={msoffice} alt="msoffice" />
-            <p className="logo-name">Microsoft Office</p>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

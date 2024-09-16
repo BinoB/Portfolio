@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="contact-container my-5">
       <h2 className="text-center">Contact</h2>
       <div className="row justify-content-center my-3">
-        <div className="col-md-2 col-sm-6">
+        <div className="col-md-2 col-sm-6 mb-4">
           <div className="contact-card">
             <div className="contact-card-header text-center">
               <img src={mail} alt="Email Icon" className="contact-card-logo" />
@@ -20,7 +20,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-2 col-sm-6">
+        <div className="col-md-2 col-sm-6 mb-4">
           <div className="contact-card">
             <div className="contact-card-header text-center">
               <img src={location} alt="Location Icon" className="contact-card-logo" />

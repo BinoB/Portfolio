@@ -1,0 +1,74 @@
+.section {
+	padding: 20px;
+  }
+  
+  .d-flex {
+	display: flex;
+	flex-wrap: wrap; /* Enables wrapping for responsive design */
+  }
+  
+  .justify-content-between {
+	justify-content: space-between;
+  }
+  
+  .align-items-center {
+	align-items: center;
+  }
+  
+  .p-5 {
+	padding: 3rem;
+  }
+  
+  .text {
+	font-size: 1.1rem;
+	line-height: 1.6;
+  }
+  
+  .button {
+	margin-top: 20px;
+  }
+  
+  img {
+	max-width: 100%; /* Ensures image is responsive */
+	height: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+	.d-flex {
+	  flex-direction: column-reverse; /* Stacks content on smaller screens */
+	  align-items: center;
+	}
+  
+	h1 {
+	  font-size: 1.8rem;
+	}
+  
+	.text {
+	  font-size: 1rem;
+	}
+  
+	.p-5 {
+	  padding: 1.5rem;
+	}
+  
+	.btn {
+	  margin-top: 15px;
+	  font-size: 1rem;
+	}
+  
+	img {
+	  margin-top: 20px;
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.text {
+	  font-size: 0.9rem;
+	}
+  
+	h1 {
+	  font-size: 1.5rem;
+	}
+  }
+  

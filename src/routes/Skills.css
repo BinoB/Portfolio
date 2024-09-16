@@ -1,77 +1,51 @@
-/* Add styles for the skill section */
-.skill {
-    background-color: rgb(255, 255, 255);
-    align-content: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  
-  /* Center align the "My Skills" heading */
-  .skill h1 {
-    text-align: center;
-  }
-  
-  /* Add styles for the frontend development logos */
-  .skill .text-center {
-    text-align: center;
-  }
-  
-  .skill-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 7px;
-  }
-  .skills-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  .skill-logo img {
-    max-width: 70px;
-    height: auto;
-  }
-  
-  .skills-logo img {
-    max-width: 80px;
-    height: auto;
-  }
-  .logo-name {
-    font-size: 14px;
-    color: #333;
-    margin-top: 5px; /* Add margin between the logo and the logo name */
-  }
-  
-  /* Style the images on hover */
-  .skill-logo img:hover {
-    transform: scale(1.1);
-  }
-  .skills-logo img:hover {
-    transform: scale(1.1);
-  }
-  
-
-
-/* 
-*body {
-  background-color: #3b82f6;
+.skills-container {
+  padding: 2rem;
+  max-width: 1200px; /* Limiting max-width for better alignment on larger screens */
+  margin: 0 auto; /* Center container horizontally */
 }
 
+.text-center {
+  text-align: center;
+}
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #455a7a, #ad587a);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
-  z-index: -1;
-} */
+.skills-section {
+  margin-bottom: 2rem;
+}
 
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
- 
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 1rem;
+}
 
+.skills-item {
+  text-align: center;
+  padding: 0.5rem;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  transition: transform 0.4s, box-shadow 0.6s;
+  flex: 1 1 150px; /* Adjust size for better responsiveness */
+}
+
+.skills-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.skills-name {
+  font-size: 0.9rem;
+  color: #333;
+}
